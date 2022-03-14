@@ -104,9 +104,9 @@ services are adjusted accordingly.
 
 If you want to get started right away, have a look at [our
 tutorial](https://docs.flagger.app/tutorials/gatewayapi-progressive-delivery),
-which shows you how to use Gateway API and Flagger to automate canary
-deployments. It won't take long to follow, but will convey how powerful
-this integration is.
+which shows you how to use Contour's Gateway API implementation and Flagger
+to automate canary deployments. It won't take long to follow,
+but will convey how powerful this integration is.
 
 ## Flagger works with all implementations
 
@@ -115,6 +115,10 @@ With added support for Gateway API, Flagger now works with all
 which means that as of today these are natively supported: Apache
 APISIX, Contour, Emissary-Ingress, Gloo Edge 2.0, Google Kubernetes
 Engine, HAProxy Ingress, HashiCorp Consul, Istio, Kong and Traefik.
+
+The Flagger team has successfully tested Contour and Istio using the v1beta2 Gateway API.
+Starting with Flagger v1.19, the Gateway API is part of our end-to-end test suite
+using the Contour implementation.
 
 ## How metrics work
 
@@ -208,6 +212,6 @@ beta/stable.
 Thanks a lot [Sanskar Jaiswal](https://github.com/aryan9600) for working on [the
 implementation](https://github.com/fluxcd/flagger/pull/1108)!
 
-We are excited to bring this feature to you and we love feedback! Please
+We are excited to bring this feature to you, and we love feedback! Please
 let us know if you have feedback, questions or how you are going to use
 this!
